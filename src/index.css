@@ -198,3 +198,11 @@ footer {
     color: var(--color-grey-900);
 }
 
+.footer__copyright {
+    text-align: center;
+    color: var(--color-white);
+    border-top: 2px solid var(--color-gray-700);
+    padding: 1rem;
+    color: var(--color-white);
+    font-weight: 300;
+}
