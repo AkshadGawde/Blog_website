@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../images/logo.jpg";
-import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   return (
     <nav>
-      <div className=".container.nav__container">
+      <div className="container nav__container">
         <Link to="/" className="nav__logo">
-          <img src={Logo} alt="Navbar Logo" />
+          <img src={Logo} alt="Navbar Logo" className="nav__logo" />
         </Link>
-        <ul className="Nav__menu">
+        <ul className="nav__menu">
           <li>
             <Link to="/profile">Ernst Achiever</Link>
           </li>
