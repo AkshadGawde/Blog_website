@@ -81,12 +81,52 @@ section{
     margin-top: 6rem;
 }
 
+.container{
+    width: var(--container-width-lg);
+    margin-inline: auto;
+}
 
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    border-radius: var(--radius-2);
+    background: var(--color-white);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
 
+.btn-primary{
+    background: var(--color-primary);
+    color: var(--color-white);
+}
 
+.btn.category{
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    background: var(--color-bg);
+    color: var(--color-primary);
+}
 
+.btn.sm{
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
 
+.btn.danger{
+    background: var(--color-red);
+    color: var(--color-white);
+}
 
+.btn:hover{
+    background: var(--color-gray-900);
+    color: var(--color-white);
+}
+
+/*NAVBAR*/
 .nav__logo {
     width: 3rem;
     display: block;
