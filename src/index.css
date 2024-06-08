@@ -126,6 +126,26 @@ section{
     color: var(--color-white);
 }
 
+.center{
+    text-align: center;
+    padding-top: 5rem;
+    margin-inline: center;
+    display: block;
+    width: 100%;
+}
+
+.error-page h2{
+    margin-top: 3rem ;
+}
+
+
+
+
+
+
+
+
+
 /*NAVBAR*/
 nav{
     height: 5rem;
