@@ -39,7 +39,7 @@ const Footer = () => {
       </ul>
 
       <div className="footer__copyright">
-        <small>All Rights Reserved &copy; Copyright, Akshad Gawde </small>
+        <small>All Rights Reserved &copy; Copyright, Akshad Gawde 2024 </small>
       </div>
     </footer>
   );
