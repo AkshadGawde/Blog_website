@@ -47,16 +47,18 @@ const Posts = () => {
 
   return (
     <section className="posts">
-      {posts.map(({ id, thumbnail, category, title, desc, authorID }) => (
-        <PostItem
-          key={id}
-          thumbnail={thumbnail}
-          category={category}
-          title={title}
-          description={desc}
-          authorID={authorID}
-        />
-      ))}
+      <div className="container posts__container">
+        {posts.map(({ id, thumbnail, category, title, desc, authorID }) => (
+          <PostItem
+            key={id}
+            thumbnail={thumbnail}
+            category={category}
+            title={title}
+            description={desc}
+            authorID={authorID}
+          />
+        ))}
+      </div>
     </section>
   );
 };
