@@ -5,7 +5,7 @@ import thumbnail from "../images/thumbnail.jpg";
 
 const PostItem = ({ postID, category, title, description, authorID }) => {
   return (
-    <article className="post">
+    <article className="posts">
       <div className=".post__thumbnail">
         <img src={thumbnail} alt={title} />
       </div>
@@ -17,7 +17,9 @@ const PostItem = ({ postID, category, title, description, authorID }) => {
         <p>{description}</p>
         <div className="post__footer">
           <PostAuthor />
-          <Link to={`/posts/categories/${category}`}>{category}</Link>
+          <Link to={`/posts/categories/${category}`} className="btn category">
+            {category}
+          </Link>
         </div>
       </div>
     </article>
