@@ -4,6 +4,12 @@ import PostAuthor from "./PostAuthor";
 import thumbnail from "../images/thumbnail.jpg";
 
 const PostItem = ({ postID, category, title, description, authorID }) => {
+  const shortDescription =
+    description.length > 145
+      ? description.substring(0, 145) + "..."
+      : description;
+  const postTitle = title.length > 30 ? title.substr(0, 30) + "..." : title;
+
   return (
     <article className="posts">
       <div className=".post__thumbnail">
@@ -12,9 +18,9 @@ const PostItem = ({ postID, category, title, description, authorID }) => {
 
       <div className="post__content">
         <Link to={`/posts/${postID}`}>
-          <h3>{title}</h3>
+          <h3>{postTitle}</h3>
         </Link>
-        <p>{description}</p>
+        <p>{shortDescription}</p>
         <div className="post__footer">
           <PostAuthor />
           <Link to={`/posts/categories/${category}`} className="btn category">
