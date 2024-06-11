@@ -140,12 +140,6 @@ section{
 
 
 
-
-
-
-
-
-
 /*NAVBAR*/
 nav{
     height: 5rem;
@@ -282,4 +276,72 @@ footer {
     aspect-ratio: 1/1;
     border-radius: var(--radius-2);
     overflow: hidden;
+}
+
+/*POSTS - DETAILS*/
+.post-details {
+    width: var(--form-width);
+    background: var(--color-white);
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+.post-details__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.post-details__buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post-details__thumbnail {
+    margin: 1rem 0;
+    height: fit-content;
+    max-height: 30rem;
+    overflow: hidden;
+}
+
+.post-details__p {
+    margin-bottom: 0.7rem;
+}
+
+.post-details__container {
+    padding: 2rem;
+    background: var(--color-white);
+    border-radius: var(--radius-4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-details__content {
+    margin-bottom: 2rem;
+}
+
+.post-details__content h1 {
+    margin: 1rem 0;
+}
+
+.post-details__thumbnail img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.post-details__buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.post-details__thumbnail{
+    margin: 1rem 0;
+    height: fit-content;
+    max-height: 30rem;
+    overflow: hidden;
+}
+
+.post-details__p{
+    margin-bottom: 0.7rem;
+    
 }

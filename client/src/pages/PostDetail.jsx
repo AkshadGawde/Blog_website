@@ -5,24 +5,26 @@ import Thumbnail from "../images/blog22.jpg";
 
 const PostDetail = () => {
   return (
-    <section className="post-detail">
+    <section className="post-details">
       <div className="container post-details__container">
         <div className="post-details__content">
           <PostAuthor />
           <div className="post-details__header">
-            <Link to="/posts/werwer/edit" className="btn sm primary">
-              Edit
-            </Link>
-            <Link to="/posts/werwer/edit" className="btn sm danger">
-              delete
-            </Link>
+            <div className="post-details__buttons">
+              <Link to="/posts/werwer/edit" className="btn sm primary">
+                Edit
+              </Link>
+              <Link to="/posts/werwer/delete" className="btn sm danger">
+                Delete
+              </Link>
+            </div>
           </div>
         </div>
         <h1>This is the post title !</h1>
-        <div className="post-detail__thumbnail">
+        <div className="post-details__thumbnail">
           <img src={Thumbnail} alt="" />
         </div>
-        <p>
+        <p className="post-details__p">
           is simply dummy text of the printing and typesetting industry. Lorem
           Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it
@@ -31,10 +33,10 @@ const PostDetail = () => {
           unchanged. It was popularised in the 1960s with the release of
           Letraset sheets containing Lorem Ipsum passages, and more recently
           with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum
+          versions of Lorem Ipsum.
         </p>
-        <p>
-          ontrary to popular belief, Lorem Ipsum is not simply random text. It
+        <p className="post-details__p">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
           it over 2000 years old. Richard McClintock, a Latin professor at
           Hampden-Sydney College in Virginia, looked up one of the more obscure
@@ -51,7 +53,7 @@ const PostDetail = () => {
           reproduced in their exact original form, accompanied by English
           versions from the 1914 translation by H. Rackham.
         </p>
-        <p>
+        <p className="post-details__p">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -60,9 +62,9 @@ const PostDetail = () => {
           the Lorem Ipsum generators on the Internet tend to repeat predefined
           chunks as necessary, making this the first true generator on the
           Internet. It uses a dictionary of over 200 Latin words, combined with
-          a handful
+          a handful.
         </p>
-        <p>
+        <p className="post-details__p">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -71,9 +73,9 @@ const PostDetail = () => {
           the Lorem Ipsum generators on the Internet tend to repeat predefined
           chunks as necessary, making this the first true generator on the
           Internet. It uses a dictionary of over 200 Latin words, combined with
-          a handful
+          a handful.
         </p>
-        <p>
+        <p className="post-details__p">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -82,7 +84,7 @@ const PostDetail = () => {
           the Lorem Ipsum generators on the Internet tend to repeat predefined
           chunks as necessary, making this the first true generator on the
           Internet. It uses a dictionary of over 200 Latin words, combined with
-          a handful
+          a handful.
         </p>
       </div>
     </section>
