@@ -223,11 +223,10 @@ footer {
 
 /*HOME - POSTS*/
 
-.posts__container {
+.posts__container, .author-posts-container, category-posts__container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
-    margin-top: 3rem;
 }
 
 .posts {
@@ -236,7 +235,6 @@ footer {
     border-radius: var(--radius-4);
     padding-bottom: 2rem;
     transition: var(--transition);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: default;
 }
 
@@ -343,5 +341,5 @@ footer {
 
 .post-details__p{
     margin-bottom: 0.7rem;
-    
 }
+
