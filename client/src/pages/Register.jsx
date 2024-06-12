@@ -47,7 +47,7 @@ const Register = () => {
             type="password"
             name="password2"
             placeholder="Confirm Password"
-            value={userData.password}
+            value={userData.password2}
             onChange={changeInputHandler}
           />
           <button type="submit" className="btn primary">
