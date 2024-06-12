@@ -223,7 +223,7 @@ footer {
 
 /*HOME - POSTS*/
 
-.posts__container, .author-posts-container, category-posts__container{
+.posts__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;

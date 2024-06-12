@@ -5,9 +5,9 @@ import { DUMMY_POSTS } from "../data";
 const AuthorPosts = () => {
   const [posts, setPosts] = useState(DUMMY_POSTS);
   return (
-    <section className="author-posts">
+    <section className="posts">
       {posts.length > 0 ? (
-        <div className="container author-post__container">
+        <div className="container post__container">
           {posts.map(({ id, thumbnail, category, title, desc, authorID }) => (
             <PostItem
               key={id}
