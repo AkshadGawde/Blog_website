@@ -17,6 +17,7 @@ import Logout from "./pages/Logout";
 import CategoryPosts from "./pages/CategoryPosts";
 import AuthorPosts from "./pages/AuthorPosts";
 import PostAuthor from "./components/PostAuthor";
+import Authors from "./pages/Authors";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       { path: "register", element: <Register /> },
       { path: "login", element: <Login /> },
       { path: "profile/:id", element: <UserProfile /> },
-      { path: "author", element: <Author /> },
+      { path: "authors", element: <Authors /> },
       { path: "posts", element: <CreatePost /> },
       { path: "posts/categories/:category", element: <CategoryPosts /> },
       { path: "profile/users/:id", element: <AuthorPosts /> },
